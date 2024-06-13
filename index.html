@@ -22,96 +22,100 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-</head>
 
 <body>
-    <div class="container body">
+    <div class="container body-form">
         <form>
-            <div>
-                <header>
-                    <h1>Payment form example</h1>
-                </header>
-            </div>
+            <header class="container-fluid">
+                <h1>Payment form example</h1>
+            </header>
             <div>
                 <!--alert-->
                 <h3 class="alert alert-danger" role="alert">Some fields are missing</h3>
             </div>
-            <div class="">
+            <div>
                 <!--date card-->
-                <div class="date-card d-flex">
-                    <fieldset>
-                        <label for="card">Card #</label><br>
-                        <input id="card" type="number" placeholder="XXXXXXXXXXXXXXXX">
-                    </fieldset>
-                    <fieldset>
-                        <label for="cvc">CVC #</label><br>
-                        <input id="cvc" type="password" placeholder="XXX">
-                    </fieldset>
-                    <fieldset>
-                        <label for="amount">Amount</label><br>
-                        <input id="amount" type="number" placeholder="00,00 $">
-                    </fieldset>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-grup">
+                            <label for="card">Card #</label><br>
+                            <input class="form-control" id="card" type="password" placeholder="XXXXXXXXXXXXXXXX">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-grup">
+                            <label for="cvc">CVC #</label><br>
+                            <input class="form-control" id="cvc" type="password" placeholder="XXX">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-grup">
+                            <label for="amount">Amount</label><br>
+                            <input class="form-control" id="amount" type="text" placeholder="00,00 $">
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex">
-                    <div class="body-left"><!--body left-->
-                        <fieldset>
+                <div class="">
+                    <div class="row"><!--name-->
+                        <fieldset class="col-6">
                             <label for="name">First Name</label><br>
-                            <input id="name" type="text" placeholder="Bernardo">
+                            <input class="form-control col-6" id="name" type="text" placeholder="Bernardo">
                         </fieldset>
-                        <fieldset>
-                            <label for="city">City</label><br>
-                            <input id="city" type="text" placeholder="Barcelona">
-                        </fieldset>
-                        <div>
-                            <fieldset>
-                                <label for="we-aceppt">We Aceppt:</label><br>
-                                <!--cards pay-->
-                                <div class="icon-cards-pay">
-                                    <input id="master-card" type="radio" name="card-pay">
-                                    <label for="master-card"><i class="fa-brands fa-cc-mastercard"></i></label>
-                                    <input id="visa" type="radio" name="card-pay">
-                                    <label for="visa"><i class="fa-brands fa-cc-visa"></i></label>
-                                    <input id="cc-diners-club" type="radio" name="card-pay">
-                                    <label for="cc-diners-club"><i class="fa-brands fa-cc-diners-club"></i></label>
-                                    <input id="cc-amex" type="radio" name="card-pay">
-                                    <label for="cc-amex"><i class="fa-brands fa-cc-amex"></i></label>
-                                </div>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <div class="body-right"><!--body right-->
-                        <fieldset>
+                        <fieldset class="col-6">
                             <label for="last-name">Last Name</label><br>
-                            <input id="last-name" type="text" placeholder="Nurvia">
+                            <input class="form-control col-6" id="last-name" type="text" placeholder="Nurvia">
                         </fieldset>
-                        <div class="d-flex">
-                            <fieldset>
-                                <label for="state">State</label><br>
-                                <select id="state" type="datalist">
-                                    <option value="null"></option>
-                                    <option value="bcn">Barcelona</option>
-                                    <option value="madrid">Madrid</option>
-                                    <option value="canarias-iland">Islas Canarias</option>
-                            </fieldset>
-                            <fieldset>
-                                <label for="postal-code">Postal Code</label><br>
-                                <input id="postal-code" type="number" placeholder="0000">
-                            </fieldset>
-                        </div>
-                        <fieldset>
-                            <label for="message">Message</label><br>
-                            <textarea id="message" cols="30" rows="5"></textarea><br>
-                            <label for="message">add any notes here.</label>
+                    </div>
+                    <div class="row">
+                        <fieldset class="col-4">
+                            <label for="city">City</label><br>
+                            <input class="form-control col-4" id="city" type="text" placeholder="Barcelona">
+                        </fieldset>
+                        <fieldset class="col-4">
+                            <label for="state">State</label><br>
+                            <select class="form-control col-4" id="state" type="select">
+                                <option value="null"></option>
+                                <option value="bcn">Barcelona</option>
+                                <option value="madrid">Madrid</option>
+                                <option value="canarias-iland">Islas Canarias</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="col-4">
+                            <label for="postal-code">postal-code</label><br>
+                            <input class="form-control col-4" id="postal-code" type="text">
                         </fieldset>
                     </div>
                 </div>
-
+                <div class="row">
+                    <!--cards pay-->
+                    <fieldset class="col-4">
+                        <label for="we-aceppt">We Aceppt:</label><br>
+                        <div class="form-control icon-cards-pay d-flex justify-content-around">
+                            <input id="master-card" type="radio" name="card-pay">
+                            <label for="master-card"><i class="fa-brands fa-cc-mastercard"></i></label>
+                            <input id="visa" type="radio" name="card-pay">
+                            <label for="visa"><i class="fa-brands fa-cc-visa"></i></label>
+                            <input id="cc-diners-club" type="radio" name="card-pay">
+                            <label for="cc-diners-club"><i class="fa-brands fa-cc-diners-club"></i></label>
+                            <input id="cc-amex" type="radio" name="card-pay">
+                            <label for="cc-amex"><i class="fa-brands fa-cc-amex"></i></label>
+                        </div>
+                    </fieldset>
+                    <!--textarea-->
+                    <fieldset class="col-md-6 offset-md-2">
+                        <label for="message">Message</label><br>
+                        <textarea class="form-control" id="message" cols="50" rows="5"></textarea><br>
+                        <label for="message">add any notes here.</label>
+                    </fieldset>
+                </div>
+                <!--botones-->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+                    <button class="btn btn-primary" type="button">Send</button>
+                </div>
             </div>
-        </form>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
-            <button class="btn btn-primary" type="button">Send</button>
-        </div>
+    </div>
+    </form>
     </div>
 </body>
 

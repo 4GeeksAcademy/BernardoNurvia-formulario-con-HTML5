@@ -1,19 +1,14 @@
-.body{
+.body-form{
     border: 1px solid gray;
     border-radius: 5px;
-    margin-top: 25px;
     margin: auto;
+    margin-top: 5%;
     padding: 2%;
 }
-.date-card{
-   
-    justify-content: space-around
-}
-.body-left{
-    margin: ;
-}
+
 .icon-cards-pay{
-    background-color: dimgray;
+    background-color: rgb(199, 193, 193);
     border-radius: 5px;
-    
+    justify-content: space-around;
+
 }
