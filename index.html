@@ -42,80 +42,77 @@
                             <input class="form-control" id="card" type="password" placeholder="XXXXXXXXXXXXXXXX">
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-2"
-                        <div class="form-grup">
-                            <label for="cvc">CVC #</label><br>
-                            <input class="form-control" id="cvc" type="password" placeholder="XXX">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="form-grup">
-                            <label for="amount">Amount $</label><br>
-                            <input class="form-control" id="amount" type="text" placeholder="00,00 $">
-                        </div>
+                    <div class="col-sm-6 col-md-2 form-grup">
+                        <label for="cvc">CVC #</label><br>
+                        <input class="form-control" id="cvc" type="password" placeholder="XXX">
                     </div>
                 </div>
-                <div class="">
-                    <div class="row"><!--name-->
-                        <fieldset class="col-sm col-md-6">
-                            <label for="name">First Name</label><br>
-                            <input class="form-control col-6" id="name" type="text" placeholder="Bernardo">
-                        </fieldset>
-                        <fieldset class="col-sm-12 col-md-6">
-                            <label for="last-name">Last Name</label><br>
-                            <input class="form-control col-6" id="last-name" type="text" placeholder="Nurvia">
-                        </fieldset>
+                <div class="col-sm-6 col-md-4">
+                    <div class="form-grup">
+                        <label for="amount">Amount $</label><br>
+                        <input class="form-control" id="amount" type="text" placeholder="00,00 $">
                     </div>
-                    <div class="row">
-                        <fieldset class="col-4">
-                            <label for="city">City</label><br>
-                            <input class="form-control col-4" id="city" type="text" placeholder="Barcelona">
-                        </fieldset>
-                        <fieldset class="col-4">
-                            <label for="state">State</label><br>
-                            <select class="form-select col-4" id="state">
-                                <option></option>
-                                <option>Barcelona</option>
-                                <option>Madrid</option>
-                                <option>Islas Canarias</option>
-                            </select>
-                        </fieldset>
-                        <fieldset class="col-4">
-                            <label for="postal-code">postal-code</label><br>
-                            <input class="form-control col-4" id="postal-code" type="text">
-                        </fieldset>
-                    </div>
-                </div>
-                <div class="row">
-                    <!--cards pay-->
-                    <fieldset class="col-sm-12 col-md-4">
-                        <label for="we-aceppt">We Aceppt:</label><br>
-                        <div class="form-control icon-cards-pay d-flex justify-content-around">
-                            <input id="master-card" type="radio" name="card-pay">
-                            <label for="master-card"><i class="fa-brands fa-cc-mastercard"></i></label>
-                            <input id="visa" type="radio" name="card-pay">
-                            <label for="visa"><i class="fa-brands fa-cc-visa"></i></label>
-                            <input id="cc-diners-club" type="radio" name="card-pay">
-                            <label for="cc-diners-club"><i class="fa-brands fa-cc-diners-club"></i></label>
-                            <input id="cc-amex" type="radio" name="card-pay">
-                            <label for="cc-amex"><i class="fa-brands fa-cc-amex"></i></label>
-                        </div>
-                    </fieldset>
-                    <!--textarea-->
-                    <fieldset class="col-md-6 offset-md-2">
-                        <label for="message">Message</label><br>
-                        <textarea class="form-control" id="message" cols="50" rows="5"></textarea>
-                        <label for="message">add any notes here.</label>
-                    </fieldset>
-                </div>
-                <!--botones-->
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
-                    <button class="btn btn-primary" type="button">Send</button>
                 </div>
             </div>
-    </div>
-    </form>
+            <div class="">
+                <div class="row"><!--name-->
+                    <fieldset class="col-sm col-md-6">
+                        <label for="name">First Name</label><br>
+                        <input class="form-control col-6" id="name" type="text" placeholder="Bernardo">
+                    </fieldset>
+                    <fieldset class="col-sm-12 col-md-6">
+                        <label for="last-name">Last Name</label><br>
+                        <input class="form-control col-6" id="last-name" type="text" placeholder="Nurvia">
+                    </fieldset>
+                </div>
+                <div class="row">
+                    <fieldset class="col-sm-12 col-md-4">
+                        <label for="city">City</label><br>
+                        <input class="form-control col-4" id="city" type="text" placeholder="Barcelona">
+                    </fieldset>
+                    <fieldset class="col-sm-12 col-md-4">
+                        <label for="state">State</label><br>
+                        <select class="form-select col-4" id="state">
+                            <option></option>
+                            <option>Barcelona</option>
+                            <option>Madrid</option>
+                            <option>Islas Canarias</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="col-sm-12 col-md-4">
+                        <label for="postal-code">Postal Code</label><br>
+                        <input class="form-control col-4" id="postal-code" type="text">
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <!--cards pay-->
+                <fieldset class="col-sm-12 col-md-4">
+                    <label for="we-aceppt">We Aceppt:</label><br>
+                    <div class="form-control icon-cards-pay d-flex justify-content-around">
+                        <input id="master-card" type="radio" name="card-pay">
+                        <label for="master-card"><i class="fa-brands fa-cc-mastercard"></i></label>
+                        <input id="visa" type="radio" name="card-pay">
+                        <label for="visa"><i class="fa-brands fa-cc-visa"></i></label>
+                        <input id="cc-diners-club" type="radio" name="card-pay">
+                        <label for="cc-diners-club"><i class="fa-brands fa-cc-diners-club"></i></label>
+                        <input id="cc-amex" type="radio" name="card-pay">
+                        <label for="cc-amex"><i class="fa-brands fa-cc-amex"></i></label>
+                    </div>
+                </fieldset>
+                <!--textarea-->
+                <fieldset class="col-md-6 offset-md-2">
+                    <label for="message">Message</label><br>
+                    <textarea class="form-control" id="message" cols="50" rows="5"></textarea>
+                    <label for="message">Add any notes here.</label>
+                </fieldset>
+            </div>
+            <!--botones-->
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+                <button class="btn btn-primary" type="button">Send</button>
+            </div>
+        </form>
     </div>
 </body>
 
